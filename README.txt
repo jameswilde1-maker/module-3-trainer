@@ -28,3 +28,12 @@ The 105 MB Resource Group PDF is not bundled. Demonstration questions and early 
 
 DATA
 Saved in the specific browser/device (localStorage). Regularly export a backup via Settings. Avoid clearing site data. Updating a hosted version requires care to preserve the same origin for user data.
+
+VERSION 0.2 — SIDEBAR ICON UPDATE
+The navigation now uses locally embedded, recognisable line icons for Home (house), Mock Exams (clipboard), Calculations (calculator), Study (open book), Progress (bar chart), Guides (document) and Settings (gear). The home dashboard and mobile navigation have matching icons. No external icon library or Wi-Fi required.
+
+GITHUB PAGES UPDATE
+Replace index.html and sw.js in the repository root with the files from this folder. Do not replace your manifest or icons. After commit and successful Pages deployment, open the site online and refresh or relaunch once to activate the updated offline cache. Offline data should remain in local storage; export a backup before updating as a precaution.
+
+VERSION 0.3 - SAFE MOCK IMPORT
+Export a backup before updating. Replace index.html and sw.js at the SAME existing HTTPS origin/path. Do not clear Safari data or delete the Home Screen app. Open online, refresh/relaunch, then test offline. Existing history, bookmarks and topic packs are retained. Approved full mocks may reuse topic-pack IDs while maintaining their own question order and answer positions. Draft full mocks are blocked; question repeats across full mocks are blocked. Full mocks require exact blueprint counts and knowledge levels. Full mock timer: 65 minutes, auto-submit at expiry while running, pass mark 39/52. Topic practice remains untimed. Timer is not persisted if you close/leave a session.
